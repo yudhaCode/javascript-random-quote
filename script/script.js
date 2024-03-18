@@ -8,8 +8,8 @@ function fetchQuote(url) {
       console.log(data);
       const randomIndex = Math.floor(Math.random() * data.length);
       const quote = data[randomIndex];
-      document.querySelector(".header h2").textContent = `- ${quote.author}`;
-      document.querySelector(".content p").textContent = `"${quote.text}"`;
+      document.querySelector(".header h2").textContent = `${quote.author}`;
+      document.querySelector(".content p").textContent = `“${quote.text}”`;
     });
 }
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const randomIndex = Math.floor(Math.random() * data.length);
         const quote = data[randomIndex];
         document.querySelector(".header h2").textContent = `${quote.author}`;
-        document.querySelector(".content p").textContent = `"${quote.text}"`;
+        document.querySelector(".content p").textContent = `“${quote.text}”`;
       });
   });
 
